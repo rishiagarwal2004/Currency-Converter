@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <title>Currency_Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💱Currency Converter</h1>
+        <div class="currency-container">
+            <select id="currency-first" aria-label="To currency">
+                <option value="AED">UAE Dirham</option>
+                <option value="AUD">Australia</option>
+                <option value="BHD">Bahraini Dinar</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="CHF">Swiss Franc</option>
+                <option value="CNY">China</option>
+                <option value="EUR">Europ</option>
+                <option value="USD" selected>USA</option>
+                <option value="INR">India</option>
+                <option value="GBP">United kingdom</option>
+                <option value="JPY">Japan</option>
+                <option value="KWD">Kuwait</option>
+                <option value="RUB">Russia</option>
+                <option value="PKR">Pakistan</option>
+                <option value="AFN">Afganistan</option>
+                <option value="ILS">Israil</option>
+                <option value="NPR">Nepal</option>
+                <option value="ZAR">South Africa</option>
+            </select>
+            <input type="number" id="worth-first"value="1"min="0">
+        </div>
+        <div class="currency-container">
+            <select id="currency-second" aria-label="To currency">
+                <option value="AUD">Australia</option>
+                <option value="EUR">Europe</option>
+                <option value="USD">United States of America</option>
+                <option value="INR" selected>India</option>
+                <option value="GBP">United Kingdom</option>
+                <option value="CAD">Canada</option>
+                <option value="CNY">China</option>
+                <option value="JPY">Japan</option>
+                <option value="KWD">Kuwait</option>
+                <option value="RUB">Russia</option>
+                <option value="PKR">Pakistan</option>
+                <option value="AFN">Afganistan</option>
+                <option value="ILS">Israil</option>
+                <option value="NPR">Nepal</option>
+                <option value="ZAR">South Africa</option>
+
+            </select>
+            <input type="number" id="worth-second"min="0" disabled aria-label="Converted Amount">
+        </div>  
+        <p class="exchange-rate" id="exchange-rate">1 USD = 138.5802 JPY</p>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
